@@ -1,13 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <>
-      Constructions
-    </>
-  );
+function App(): JSX.Element {
+  return <>Constructions</>;
 }
 
 export default App;
