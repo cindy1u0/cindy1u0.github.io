@@ -85,7 +85,7 @@ const SocialIconGroup = (): JSX.Element => {
       <StyledText>You can also find me on</StyledText>
       {socialMedia.map((info, idx: number) => {
         return (
-          <StyledLink key={idx} href={info.link}>
+          <StyledLink key={idx} href={info.link} target="_blank">
             <FontAwesomeIcon icon={info.icon} size={'2x'} />
           </StyledLink>
         );
