@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const scrollAnimation = keyframes`
   0% {
-    transform: translate(120%, 0);
+    transform: translate(100%, 0);
   }
   100% {
     transform: translate(-100%, 0);
@@ -35,7 +35,7 @@ const TopScroll = (): JSX.Element => {
   return (
     <Container>
       <StyledText>
-        HII :D WELCOME TO MY WEBSITE. NICE TO MEET YOU! &nbsp;&nbsp;&nbsp;&nbsp;
+        HII :D WELCOME TO MY WEBSITE! NICE TO MEET YOU! &nbsp;&nbsp;&nbsp;&nbsp;
         你好 :D 欢迎来到我的网站！很高兴认识你！&nbsp;&nbsp;&nbsp;&nbsp;
         こんにちは :D はじめまして！ウェブサイトにようこそ！
       </StyledText>
