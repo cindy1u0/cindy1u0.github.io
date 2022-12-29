@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SocialIconGroup from '../components/socialIconGroup';
 import TopScroll from '../components/topScroll';
 
 const Wrapper = styled.section`
@@ -49,6 +50,7 @@ const Home = (): JSX.Element => {
           })}
         </PositionGroup>
       </Container>
+      <SocialIconGroup />
     </Wrapper>
   );
 };
