@@ -36,6 +36,32 @@ const PositionContainer = styled.div`
   padding: 10px 40px;
 `;
 
+const SocialsContainer = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+`;
+
+const NumberText = styled.span`
+  font-size: 16px;
+  left: 20px;
+  position: absolute;
+  top: -10px;
+`;
+
+const HorizontalLine = styled.span`
+  border-top: 1px #000 solid;
+  margin: auto 20px;
+  width: 150px;
+`;
+
+const StyledText = styled.span`
+  align-self: center;
+  font-size: 16px;
+  margin-right: 20px;
+`;
+
 const Home = (): JSX.Element => {
   const positions: string[] = ['Developer', 'Photographer', 'Musician'];
   return (
@@ -50,7 +76,12 @@ const Home = (): JSX.Element => {
           })}
         </PositionGroup>
       </Container>
-      <SocialIconGroup />
+      <SocialsContainer>
+        <NumberText>01.</NumberText>
+        <HorizontalLine />
+        <StyledText>You can also find me on</StyledText>
+        <SocialIconGroup color={'#000'} />
+      </SocialsContainer>
     </Wrapper>
   );
 };

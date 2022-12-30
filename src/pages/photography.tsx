@@ -1,5 +1,4 @@
 import React from 'react';
-import Headshot from '../images/me.jpeg';
 import styled from 'styled-components';
 import Gallery from 'react-photo-gallery';
 import { PHOTOS } from '../utils/photoList';
