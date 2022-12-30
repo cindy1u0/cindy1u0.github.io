@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   height: 36px;
   left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -15,10 +16,10 @@ const Container = styled.div`
 
 const scrollAnimation = keyframes`
   0% {
-    transform: translate(100%, 0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
   }
 `;
 

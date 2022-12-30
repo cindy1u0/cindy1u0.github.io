@@ -1,6 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import './App.css';
+import Footer from './components/footer';
 import Layout from './components/layout';
 import About from './pages/about';
 import Experience from './pages/experience';
@@ -26,6 +27,7 @@ function App(): JSX.Element {
       <Element name="photography">
         <Photography />
       </Element>
+      <Footer />
     </Layout>
   );
 }
