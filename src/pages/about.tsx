@@ -10,6 +10,8 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
+  padding: 0 18%;
 `;
 
 const TitleText = styled.h1`
@@ -18,8 +20,8 @@ const TitleText = styled.h1`
 
 const TitleContainer = styled.div`
   display: flex;
-  margin: auto 20px auto 0;
-  position: relative;
+  margin-top: 120px;
+  position: absolute;
 `;
 
 const NumberText = styled.span`
@@ -31,15 +33,13 @@ const NumberText = styled.span`
 
 const HorizontalLine = styled.span`
   border-top: 1px #000 solid;
-  width: 260px;
+  width: 300px;
 `;
 
 const BodyContainer = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
-  // 280px being the line length + padding
-  padding: 3rem 280px;
 `;
 
 const BodyText = styled.p`
@@ -66,41 +66,43 @@ const ImageWrapper = styled.img`
 const About = (): JSX.Element => {
   return (
     <Wrapper>
+      <TitleContainer>
+        <NumberText>02.</NumberText>
+        <HorizontalLine />
+      </TitleContainer>
       <Container>
-        <TitleContainer>
-          <NumberText>02.</NumberText>
-          <HorizontalLine />
-        </TitleContainer>
         <TitleText>About</TitleText>
+        <BodyContainer>
+          <BodyText>
+            Hi! My name is Cindy, and I am a Boston-based software engineer. I
+            graduated with a major in Computer Science from Northeastern
+            University. I enjoy building impactful software that benefits
+            others.
+            <br></br>
+            <br></br>
+            As a Computer Science student, I have developed strong problem
+            solving skills at Northeastern. In order to explore more, I joined
+            some tech organizations to improve my programming skills in
+            Typescript, Python, Java, etc.
+            <br></br>
+            <br></br>I am passionate about music. In my free time, I like to
+            sing, dance, play instruments, such as piano and ukulele. In
+            addition to music, I am also interested in digital art and
+            photography, which helps me capture the beauty in everyday life.
+            <br></br>
+            <br></br>
+            <ResumeLink
+              href={
+                'https://drive.google.com/file/d/1i3OZEhMT_MxLt4uaD8BrDvuv74DnjEF9/view?usp=sharing'
+              }
+              target="_blank"
+            >
+              View my resume {`->`}
+            </ResumeLink>
+          </BodyText>
+          <ImageWrapper src={Headshot} />
+        </BodyContainer>
       </Container>
-      <BodyContainer>
-        <BodyText>
-          Hi! My name is Cindy, and I am a Boston-based software engineer. I
-          graduated with a major in Computer Science from Northeastern
-          University. I enjoy building impactful software that benefits others.
-          <br></br>
-          <br></br>
-          As a Computer Science student, I have developed strong problem solving
-          skills at Northeastern. In order to explore more, I joined some tech
-          organizations to improve my programming skills in Typescript, Python,
-          Java, etc.
-          <br></br>
-          <br></br>I am passionate about music. In my free time, I like to sing,
-          dance, play instruments, such as piano and ukulele. In addition to
-          music, I am also interested in digital art and photography, which
-          helps me capture the beauty in everyday life.<br></br>
-          <br></br>
-          <ResumeLink
-            href={
-              'https://drive.google.com/file/d/1i3OZEhMT_MxLt4uaD8BrDvuv74DnjEF9/view?usp=sharing'
-            }
-            target="_blank"
-          >
-            View my resume {`->`}
-          </ResumeLink>
-        </BodyText>
-        <ImageWrapper src={Headshot} />
-      </BodyContainer>
     </Wrapper>
   );
 };
