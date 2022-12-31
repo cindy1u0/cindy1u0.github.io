@@ -56,7 +56,7 @@ const Footer = (): JSX.Element => {
         <SocialIconGroup color={'#fff'} />
       </ContactContainer>
       <CreditContainer>
-        <CreditText>Made with ♥ by Cindy</CreditText>
+        <CreditText>Made by Cindy Luo</CreditText>
         <CreditText>Designed by Elaine Zhang</CreditText>
       </CreditContainer>
       <BackToTopContainer onClick={() => animateScroll.scrollToTop()}>
