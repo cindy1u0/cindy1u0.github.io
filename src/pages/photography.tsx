@@ -9,8 +9,6 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 0 12%;
 `;
 
 const TitleText = styled.h1`
@@ -19,8 +17,8 @@ const TitleText = styled.h1`
 
 const TitleContainer = styled.div`
   display: flex;
-  margin-top: 120px;
-  position: absolute;
+  margin: auto 20px auto 0;
+  position: relative;
 `;
 
 const NumberText = styled.span`
@@ -32,20 +30,26 @@ const NumberText = styled.span`
 
 const HorizontalLine = styled.span`
   border-top: 1px #000 solid;
-  width: 200px;
+  width: 300px;
+`;
+
+const GalleryContainer = styled.div`
+  padding: 3% 15%;
 `;
 
 const Photography = (): JSX.Element => {
   return (
     <Wrapper>
-      <TitleContainer>
-        <NumberText>05.</NumberText>
-        <HorizontalLine />
-      </TitleContainer>
       <Container>
+        <TitleContainer>
+          <NumberText>05.</NumberText>
+          <HorizontalLine />
+        </TitleContainer>
         <TitleText>Photography</TitleText>
-        <Gallery photos={PHOTOS} />
       </Container>
+      <GalleryContainer>
+        <Gallery photos={PHOTOS} />
+      </GalleryContainer>
     </Wrapper>
   );
 };

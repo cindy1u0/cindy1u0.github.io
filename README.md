@@ -8,4 +8,3 @@ website v2
 * Animations/cool effects on each page
 * Resizing css
 * Mobile css
-* Preload photos to improve loading speed
