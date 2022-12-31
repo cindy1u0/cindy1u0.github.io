@@ -15,6 +15,7 @@
     ".eslintrc.json",
     "tsconfig.json",
     "package.json",
+    "public/manifest.json",
     "build"
   ],
   "parser": "@typescript-eslint/parser",
